@@ -1,0 +1,21 @@
+#+TITLE: occur-context-resize.el
+#+AUTHOR: Charles L.G. Comstock
+#+EMAIL: dgtized@gmail.com
+
+* Usage
+
+Allows dynamic re-sizing the surrounding context in an occur mode buffer. This is similar to the diff resizing in [[https:github.com/magit/magit][magit]]. The following key bindings are added to ~occur-mode-map~:
+
+| Key | Function                     |
+|-----+------------------------------|
+| +   | occur-context-resize-larger  |
+| -   | occur-context-resize-smaller |
+| 0   | occur-context-resize-default |
+
+~occur-context-resize-default~ reverts the context size to ~nil~, which reverts to using ~list-matching-lines-default-context-lines~ for default context size.
+
+* Install
+
+Using the [[https://melpa.milkbox.net][MELPA]] package archive, 
+
+ : M-x package-install [RET] occur-context-resize [RET]
