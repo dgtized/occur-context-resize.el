@@ -27,6 +27,12 @@
 ;; Makes +,-, and 0 resize the context displayed around occur matches in
 ;; `occur-mode'.
 
+;;; Usage:
+
+;; Enable the package in `occur-mode' with the following:
+;;
+;;   (add-hook 'occur-mode-hook 'occur-context-resize-mode)
+
 ;;; Code:
 
 (defun occur-context-resize-larger ()
