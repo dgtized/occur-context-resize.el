@@ -36,18 +36,21 @@
 ;;; Code:
 
 (defun occur-context-resize-larger ()
+  "Show more context around occur matches."
   (interactive)
   (setf (cadr occur-revert-arguments)
         (1+ (or (cadr occur-revert-arguments) 0)))
   (revert-buffer))
 
 (defun occur-context-resize-smaller ()
+  "Show less context around occur matches."
   (interactive)
   (setf (cadr occur-revert-arguments)
         (max (1- (or (cadr occur-revert-arguments) 0)) 0))
   (revert-buffer))
 
 (defun occur-context-resize-default ()
+  "Revert to show default context around occur-matches."
   (interactive)
   (setf (cadr occur-revert-arguments) nil)
   (revert-buffer))
