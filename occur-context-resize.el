@@ -31,19 +31,19 @@
 
 (defun occur-context-resize-larger ()
   (interactive)
-  (setcar (cdr occur-revert-arguments)
-          (1+ (or (cadr occur-revert-arguments) 0)))
+  (setf (cadr occur-revert-arguments)
+        (1+ (or (cadr occur-revert-arguments) 0)))
   (revert-buffer))
 
 (defun occur-context-resize-smaller ()
   (interactive)
-  (setcar (cdr occur-revert-arguments)
-          (max (1- (or (cadr occur-revert-arguments) 0)) 0))
+  (setf (cadr occur-revert-arguments)
+        (max (1- (or (cadr occur-revert-arguments) 0)) 0))
   (revert-buffer))
 
 (defun occur-context-resize-default ()
   (interactive)
-  (setcar (cdr occur-revert-arguments) nil)
+  (setf (cadr occur-revert-arguments) nil)
   (revert-buffer))
 
 (let ((map occur-mode-map))
