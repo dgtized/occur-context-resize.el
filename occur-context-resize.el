@@ -60,7 +60,9 @@
 
 ;;;###autoload
 (define-minor-mode occur-context-resize-mode
-  "Minor mode for dynamically resizing context around matches in occur-mode."
+  "Dynamically resize context around matches in occur-mode.
+
+\\{occur-context-resize-mode-map}"
   :keymap (let ((map (make-sparse-keymap)))
             (define-key map (kbd "+") 'occur-context-resize-larger)
             (define-key map (kbd "-") 'occur-context-resize-smaller)
