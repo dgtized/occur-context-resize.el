@@ -19,3 +19,9 @@ Allows dynamic re-sizing the surrounding context in an occur mode buffer. This i
 Using the [[https://melpa.milkbox.net][MELPA]] package archive, 
 
  : M-x package-install [RET] occur-context-resize [RET]
+
+And then add the following somewhere in your emacs initialization
+
+#+BEGIN_SRC emacs-lisp
+  (add-hook 'occur-mode-hook 'occur-context-resize-mode)
+#+END_SRC

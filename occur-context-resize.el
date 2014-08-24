@@ -46,10 +46,18 @@
   (setf (cadr occur-revert-arguments) nil)
   (revert-buffer))
 
-(let ((map occur-mode-map))
-  (define-key map (kbd "+") 'occur-context-resize-larger)
-  (define-key map (kbd "-") 'occur-context-resize-smaller)
-  (define-key map (kbd "0") 'occur-context-resize-default))
+(defvar occur-context-resize-mode-map
+  (let ((map (make-sparse-keymap)))
+    (define-key map (kbd "+") 'occur-context-resize-larger)
+    (define-key map (kbd "-") 'occur-context-resize-smaller)
+    (define-key map (kbd "0") 'occur-context-resize-default)
+    map)
+  "Keymap for occur-context-resize-mode")
+
+;;;###autoload
+(define-minor-mode occur-context-resize-mode
+  "Minor mode for resizing context in occur-mode"
+  :keymap 'occur-context-resize-mode-map)
 
 (provide 'occur-context-resize)
 ;;; occur-context-resize.el ends here
