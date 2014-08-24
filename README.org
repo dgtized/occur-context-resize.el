@@ -4,7 +4,7 @@
 
 * Usage
 
-Allows dynamic re-sizing the surrounding context in an occur mode buffer. This is similar to the diff resizing in [[https:github.com/magit/magit][magit]]. The following key bindings are added to ~occur-mode-map~:
+Allows dynamic re-sizing the surrounding context in an occur mode buffer. This is similar to the diff resizing in [[https:github.com/magit/magit][magit]]. The following key bindings are enabled:
 
 | Key | Function                     |
 |-----+------------------------------|
