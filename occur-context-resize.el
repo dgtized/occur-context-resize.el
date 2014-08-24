@@ -1,4 +1,4 @@
-;;; occur-context-resize.el --- dynamically resize context around occur matches  -*- lexical-binding: t; -*-
+;;; occur-context-resize.el --- dynamically resize context around matches in occur-mode  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2014  Charles L.G. Comstock
 
@@ -54,7 +54,7 @@
 
 ;;;###autoload
 (define-minor-mode occur-context-resize-mode
-  "Minor mode for dynamically resizing context in occur-mode."
+  "Minor mode for dynamically resizing context around matches in occur-mode."
   :keymap (let ((map (make-sparse-keymap)))
             (define-key map (kbd "+") 'occur-context-resize-larger)
             (define-key map (kbd "-") 'occur-context-resize-smaller)
