@@ -1,6 +1,6 @@
 ;;; occur-context-resize.el --- dynamically resize context around matches in occur-mode
 
-;; Copyright (C) 2014  Charles L.G. Comstock
+;; Copyright (C) 2014-2016 Charles L.G. Comstock
 
 ;; Author: Charles L.G. Comstock <dgtized@gmail.com>
 ;; Created: 19 Aug 2014
