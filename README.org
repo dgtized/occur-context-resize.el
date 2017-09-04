@@ -32,6 +32,6 @@ And then add the following somewhere in your emacs initialization
 
 * License
 
-Copyright © 2014-2016 Charles L.G. Comstock
+Copyright © 2014-2017 Charles L.G. Comstock
 
 Distributed under the GNU General Public License, version 3
